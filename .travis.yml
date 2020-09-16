@@ -12,7 +12,7 @@ before_deploy:
 env:
   global: PATH=/opt/python/3.7.1/bin:$PATH
 deploy:
-  - provider: script
-  - skip_cleanup: true
-  - on: master
-  - script: sh $TRAVIS_BUILD_DIR/scripts/deploy.sh
+  provider: script
+  skip_cleanup: true
+  on: master
+  script: sh $TRAVIS_BUILD_DIR/scripts/deploy.sh
